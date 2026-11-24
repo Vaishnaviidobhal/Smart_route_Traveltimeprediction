@@ -1,0 +1,91 @@
+{
+    "best_model": "Gradient Boosting",
+    "metrics": {
+        "Linear Regression (Baseline)": {
+            "MAE": 4.935,
+            "RMSE": 6.384,
+            "R2": 0.8372,
+            "MAPE": 16.32
+        },
+        "Ridge Regression": {
+            "MAE": 4.935,
+            "RMSE": 6.383,
+            "R2": 0.8372,
+            "MAPE": 16.32
+        },
+        "Decision Tree": {
+            "MAE": 1.133,
+            "RMSE": 1.912,
+            "R2": 0.9854,
+            "MAPE": 3.69
+        },
+        "Random Forest Regressor": {
+            "MAE": 0.92,
+            "RMSE": 1.612,
+            "R2": 0.9896,
+            "MAPE": 2.98
+        },
+        "Gradient Boosting": {
+            "MAE": 0.927,
+            "RMSE": 1.575,
+            "R2": 0.9901,
+            "MAPE": 3.03
+        }
+    },
+    "features": {
+        "categorical": [
+            "origin",
+            "destination",
+            "day_of_week",
+            "weather"
+        ],
+        "numeric": [
+            "distance_km",
+            "hour",
+            "minute",
+            "fractional_hour",
+            "is_weekend",
+            "is_rush_hour"
+        ]
+    },
+    "locations": [
+        "Clock Tower",
+        "ISBT Dehradun",
+        "Miyawala",
+        "UPES Bidholi"
+    ],
+    "routes": [
+        "Clock Tower -> ISBT Dehradun",
+        "Clock Tower -> Miyawala",
+        "Clock Tower -> UPES Bidholi",
+        "ISBT Dehradun -> Clock Tower",
+        "ISBT Dehradun -> Miyawala",
+        "ISBT Dehradun -> UPES Bidholi",
+        "Miyawala -> Clock Tower",
+        "Miyawala -> ISBT Dehradun",
+        "Miyawala -> UPES Bidholi",
+        "UPES Bidholi -> Clock Tower",
+        "UPES Bidholi -> ISBT Dehradun",
+        "UPES Bidholi -> Miyawala"
+    ],
+    "weather_types": [
+        "Clear",
+        "Cloudy",
+        "Fog / Haze",
+        "Rain"
+    ],
+    "distance_lookup": {
+        "Clock Tower -> ISBT Dehradun": 6.98,
+        "Clock Tower -> Miyawala": 9.25,
+        "Clock Tower -> UPES Bidholi": 15.53,
+        "ISBT Dehradun -> Clock Tower": 7.13,
+        "ISBT Dehradun -> Miyawala": 10.94,
+        "ISBT Dehradun -> UPES Bidholi": 19.06,
+        "Miyawala -> Clock Tower": 8.98,
+        "Miyawala -> ISBT Dehradun": 10.99,
+        "Miyawala -> UPES Bidholi": 24.67,
+        "UPES Bidholi -> Clock Tower": 14.63,
+        "UPES Bidholi -> ISBT Dehradun": 19.32,
+        "UPES Bidholi -> Miyawala": 23.17
+    }
+}
