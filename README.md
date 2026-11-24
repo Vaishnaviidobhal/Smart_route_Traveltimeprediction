@@ -238,21 +238,4 @@ Smart_route_Traveltimeprediction/
 
 ---
 
-## 🎯 Viva & Presentation Guide
 
-When presenting this project for semester evaluations or technical interviews, highlight these key aspects:
-
-1. **Realistic Data Pipeline**:
-   - Rather than using synthetic toy datasets, the project leverages **7,984 real TomTom Orbis Routing API observations** that reflect actual Dehradun road traffic bottlenecks.
-2. **Feature Engineering Beyond Static Distance**:
-   - Distance alone explains only a fraction of travel delay. Introducing cyclic temporal variables (`fractional_hour`, `is_rush_hour`, `is_weekend`) and environmental states (`weather_factor`) reduced prediction error from **4.94 minutes down to 0.92 minutes**.
-3. **Rigorous Benchmarking**:
-   - Tested 5 distinct algorithms ranging from parametric linear baselines to non-linear bagging and boosting architectures. Gradient Boosting was chosen as champion due to the lowest RMSE (1.575 min) and highest $R^2$ (0.9901).
-4. **End-to-End Practical Deployment**:
-   - The project is packaged as a ready-to-use decision support tool with live satellite weather ingestion, journey duration forecasting, confidence margins, and optimal departure recommendations.
-
----
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE) - feel free to use and adapt it for academic and research purposes.
